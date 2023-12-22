@@ -5,26 +5,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delivery food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600;8..144,800&family=Roboto+Serif:ital,opsz,wght@1,8..144,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
+  <div class="page-wrapper">
+    <header class="header">
     <div class="container">
       <div class="header-box">
         <div class="header-logo logo">
           <img src="/images/logo.png" alt="">
         </div>
         <div class="header-controls">
-          controls
+          <button class="btn-primary">
+            <img src="/images/icons/user.png" alt="user">
+            Войти
+          </button>
+          <button class="btn-outline">
+            <img src="/images/icons/shopping-cart.png" alt="shopping-car">
+            Корзина
+          </button>
         </div>
       </div>
     </div>
   </header>
   <main>
     <div class="main">
-      <div class="container">
-        container
+      <section class="banner">
+        <div class="container">
+          <div class="banner-item">
+            <h2 class="banner-item-title">
+              Онлайн-сервис доставки еды на дом
+            </h2>
+            <p class="banner-item--subTitle">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+          </div>
       </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products-header">
+            <h3 class="products-header--title">Рестораны
+            </h3>
+
+            <input 
+              type="text" 
+              class="products-header--search"
+              placeholder="Поиск блюд и ресторанов"
+            />
+          </div>
+        </div>
+      </section>
+      
     </div>
   </main>
   <footer class="footer">
@@ -33,9 +67,21 @@
         <div class="footer-logo logo">
           <img src="/images/logo.png" alt="">
         </div>
-        <div class="footer-nav"></div>
-        <div class="footer-social"></div>
+        <div class="footer-nav">
+          <ul>
+            <li>Ресторанам </li>
+            <li>Курьерам</li>
+            <li>Пресс-центр</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <img src="/images//social/insta.png" alt="insta">
+          <img src="/images//social/facebook.png" alt="facebook">
+          <img src="/images//social/vk.png" alt="vk">
+        </div>
       </div>
     </div>
   </footer>
+  </div>
 </body>
