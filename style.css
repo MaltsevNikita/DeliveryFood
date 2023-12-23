@@ -118,13 +118,13 @@ main{
   margin: 0 auto;
   margin-bottom: 56px;
   max-width: 95%;
-  background-color: #EFDBFF;
+ 
 }
-
 .banner-item{
+  background-color: #FFF188;
   background-image: url(./images/banners/banner.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center right;
   padding: 68px;
   border-radius: 10px;
@@ -284,6 +284,10 @@ main{
   top: 14px;
 }
 @media (max-width:991px) {
+  .banner-item{
+    background-image:none
+  }
+
   .banner-item--title {
     max-width: 100%;
   }
@@ -291,6 +295,7 @@ main{
   .banner-item--subTitle { 
     max-width: 100%;
   }
+  
   .products-card{
     width: calc((100% - 24px)/2);
   }
