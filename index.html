@@ -23,7 +23,7 @@
             <img src="/images/icons/user.png" alt="user">
             Войти
           </button>
-          <button class="btn-outline">
+          <button id='cart-button'>
             <img src="/images/icons/shopping-cart.png" alt="shopping-car">
             Корзина
           </button>
@@ -45,9 +45,11 @@
       </section>
 
       <section class="products">
+
         <div class="container">
+          <h2>Рестораны</h2>
           
-          <div class="products-wrapper">
+          <div class="products-wrapper" id="rests-container">
             <a href="./goods.html" class="products-card">
               <div class="products-card__image">
                 <img src="/images/rests/pizzaPlus.jpg" alt="pizzaPlus">
@@ -194,15 +196,10 @@
                       <div class="products-card__description-info--group">
                         Пицца 
                       </div>
-
                     </div>
-                      
+
               </div>
             </div>
-
-
-
-
         </div>
       </section>
       
@@ -288,4 +285,5 @@
     </div>
   </footer>
   </div>
+<script src="./index.js"></script>
 </body>
